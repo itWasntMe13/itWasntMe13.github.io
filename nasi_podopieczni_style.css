@@ -18,8 +18,6 @@ a:hover {
 
 #container {
     height: 100%;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 /*HEADER*/
@@ -111,20 +109,33 @@ a:hover {
                 width: 100%;
             }
 
-/*IMAGE*/
-.image-section {
-    display: flex;
+/*IMAGES*/
+.images-section {
     width: 100%;
     height: 50%;
-    align-content: center;
-    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Koho', sans-serif;
+    background-color: #FFFFFF;
+    color: #000000;
+    align-items: center;
 }
 
-.image-section img {
-    max-width: 100%;
-    margin: auto;
-    height: auto; 
-}
+    .images-row {
+        width: calc(100% - 20px);
+        display: flex;
+        justify-content: space-evenly;
+        margin: 10px;
+    }
+
+        .images-content{
+            width: calc(25% - 20px);
+            text-align: center;
+        }
+
+            .images-content img {
+                width: 100%;
+            }
 
 /*FOOTER*/
 .footer-banner {

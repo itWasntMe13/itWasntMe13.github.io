@@ -18,8 +18,6 @@ a:hover {
 
 #container {
     height: 100%;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 /*HEADER*/
@@ -111,20 +109,57 @@ a:hover {
                 width: 100%;
             }
 
-/*IMAGE*/
-.image-section {
+/* CONTACT */
+.contact-section {
     display: flex;
-    width: 100%;
+    flex-direction: column;
+    width: 40%;
     height: 50%;
-    align-content: center;
-    align-self: center;
+    margin: 0 auto;
+    align-items: center;
+    padding: 20px;
 }
 
-.image-section img {
-    max-width: 100%;
-    margin: auto;
-    height: auto; 
-}
+    .contact-section h2 {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+        width: 100%; /* Dodano, aby elementy formularza zajmowały całą dostępną szerokość */
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1em;
+        box-sizing: border-box; /* Dodano, aby zachować poprawne wymiary elementów pomimo dodanego paddingu */
+    }
+
+    button[type="submit"] {
+        background-color: #000000;
+        color: #ffffff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 1em;
+        cursor: pointer;
+    }
+
+    button[type="submit"]:hover {
+        background-color: #FFA800;
+    }
+
+
 
 /*FOOTER*/
 .footer-banner {

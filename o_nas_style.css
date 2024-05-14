@@ -18,8 +18,6 @@ a:hover {
 
 #container {
     height: 100%;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 /*HEADER*/
@@ -111,20 +109,33 @@ a:hover {
                 width: 100%;
             }
 
-/*IMAGE*/
-.image-section {
-    display: flex;
+/*ABOUT US*/
+.about-us-section {
     width: 100%;
     height: 50%;
-    align-content: center;
-    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    color: #000000;
+    font-family: 'Koho', sans-serif;
+    padding: 20px;
 }
 
-.image-section img {
-    max-width: 100%;
-    margin: auto;
-    height: auto; 
-}
+    .about-us-content {
+        max-width: 800px;
+        text-align: center;
+    }
+
+    .about-us-content h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+
+    .about-us-content p {
+        font-size: 1.1em;
+        line-height: 1.6;
+    }
 
 /*FOOTER*/
 .footer-banner {
